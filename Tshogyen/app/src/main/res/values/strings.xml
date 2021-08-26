@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Tshogyen</string>
+    <string name="user_email">User Email</string>
+    <string name="user_name">User Name</string>
+    <string name="username">AdminID</string>
+    <string name="password">Password</string>
+    <string name="full_name">Full Name : </string>
+    <string name="email">Email : </string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="enter_user_email">Enter User Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="update_candidates">Update Candidates</string>
+    <string name="register_candidates">Register Candidates</string>
+    <string name="logout">Logout</string>
+    <string name="please_click_here_to_verify_email">Please Click Here To Verify Email</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="user_profile">User Profile</string>
+    <string name="about">About</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="log_out">Log Out</string>
+    <string name="profilepic">profilePic</string>
+    <string name="your_profile">Your Profile</string>
+    <string name="user_id">User ID :</string>
+    <string name="candidates">Candidates</string>
+    <string name="chief_councillor">Chief Councillor</string>
+    <string name="dupety_chief_councillor">Dupety Chief Councillor</string>
+    <string name="hostel_councillor">Hostel Councillor</string>
+    <string name="title">TSHOGYEN</string>
+    <string name="aboutapp">Tshogyen is a mobile voting application for the GCIT councillors voting.
+    With the help of this application, the students and teachers can vote for their respective candidate.
+    Only the staffs and students of GCIT can register and use this app . After logging into this application,
+    the voter can view candidates, view their manifesto videos through a given link, view the result and
+        log out of the application. The voting feature will be only available for an hour on a particular
+        date. After logging into the app, the voter will automatically be logged out of the app
+        if no action is performed by them. Every vote counts.
+
+    </string>
+    <string name="role">Role : </string>
+    <string name="name">Name : </string>
+    //specific candidate
+    <string-array name="councilor">
+        <item>Chief Councillor</item>
+        <item>Boy Resident Councillor</item>
+        <item>Girl Resident Councillor</item>
+        <item>Boy Cultural Coordinator</item>
+        <item>Girl Cultural Coordinator</item>
+        <item>Boy Games &amp; Sports Coordinator</item>
+        <item>Girl Games &amp; Sports Coordinator</item>
+        <item>Boy Prayer Coordinator</item>
+        <item>Girl Prayer Coordinator</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

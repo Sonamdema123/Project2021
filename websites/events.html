@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>events</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X_UA_Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+<style type="text/css">
+/*slide*/
+.myslide{
+	position: relative;
+}
+
+.my_slides{
+	display: none;
+}
+/*image slider*/
+.carousel-inner img{
+    width:100%;
+    height:100%;
+}
+.card-title{opacity:0.8;}
+.card img{border-radius:16px;}
+.card{
+	background-color: #edbb99;
+}
+.row-cols-md-2{background-color:#edbb99;}
+p{font-size:18px; font-family:sans-serif; color:#0c3329; #ecf0f1;}
+/*navbar*/
+.navbar{
+    padding:.6rem;
+
+}
+.navbar-nav li{
+    padding-right:20px;
+  
+}
+.nav-link{
+    font-size:1.2em !important;
+}
+/*contact*/
+.wrapper{
+  font-family: 'Kavivanar', cursive;
+  background-image:url(c.jpg);
+  opacity: 0.5;
+
+}
+.top-form,.middle-form,.bottom-form{
+  width:100%;
+  min-height:70px;
+  margin:10px 0;
+
+}
+.form input[type="text"]
+.form textarea{
+  padding: 15px 5px;
+  box-sizing: border-box;
+  width:100%;
+  border:2px solid #fff;
+  border-radius: 2px;
+  outline:none;
+  transition: all 0.2s ease;
+}
+.form input:focus,
+.form textarea:focus{
+  border-color: #48c9b0;
+  box-shadow:3px 3px 5px;
+}
+.form .label{
+  margin-bottom:5px;
+  text-transform: capitalize;
+  font-family: serif;
+}
+.btn{
+  background-color:#4ca1af;
+  width:150px;
+  padding:10px 0;
+  border-radius:30px;
+  text-align: center;
+  text-transform:uppercase;
+  color:#fff;
+  cursor: pointer;
+  z-index:1;
+}
+/*end contact*/
+/*footer*/
+footer{
+    background-color:#3f3f3f;
+    color:#d5d5d5;
+    padding-top:2rem;
+}
+hr.light{
+    border-top:1px solid #d5d5d5;
+    width:75%;
+    margin-top:.8rem;
+    margin-bottom:1rem;
+}
+h3{
+  font-family:serif;
+  color: #186a3b ;
+}
+.col-md-4 p a{
+  font-family:'Kavivanar',cursive;
+  color:#7d6608;
+  font-size:18px;
+}
+.d-block{
+  height:8vh;width:100%;
+  margin-left: 40px;
+}
+/*end footer*/
+.btn:hover{background-color: #f5c01b;}
+h5{font-family:serif; color:#186a3b;}
+p a{color:#f8f9f9;}
+</style>
+<body style="background-color:#d7dbdd;">
+<nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img src="flag.jpeg" class="d-block "></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <div class="mr-auto"></div>
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About me
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="Bio-data.html">Bio Data</a>
+          <a class="dropdown-item" href="experience.html">Experience</a>
+          <a class="dropdown-item" href="interest.html">Interest</a>
+          <a class="dropdown-item" href="family.html">Family</a>
+        </div>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="gallary.html">Footprint</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          GCIT
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="events.html">Gcit events</a>
+            <a class="dropdown-item" href="time_table.html">Time table</a>
+            <a class="dropdown-item" href="result.html">Semster_Result</a>
+                <a class="dropdown-item" href="form.html">Result</a>
+        </div>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="bmi.html">Find_BMI</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+
+		<div class="container-fluid padding" style="background-color:#7c4842;">
+	        <div class="row padding">
+	        	<img src="gcit.png">
+	            <div class="col-md-5">
+	            	<h2 style="text-align:center; font-family:serif;color:#1b2631;">Events</h2>
+	                <p style="font-size:20px; font-family:serif;color: #fdfefe;">These is the event which was happened in the Gyalpozhing college of information technology after 2019 first year students joined in the college. Some important events are given below and those who want to learn  more about college events or want to view more images than kindly visit the link which is shared in bottom of events. </p>  	
+	            </div>
+	            <div class="col-md-5">
+					<div class="myslide">
+					    <img class="my_slides" src="e7.jpg" style="width: 100%">
+				        <img class="my_slides" src="e6.jpg" style="width: 100%">
+					</div>
+					   	<br>
+					<div class="dot_s">
+					    <span class="dot"></span>
+				      	<span class="dot"></span>
+					</div>
+						<!---script for auto_image_slider-->
+					    <script>
+					      var slideIndex = 0;
+					      showSlides();
+
+					      function showSlides(){
+					        var i;
+					        var slides = document.getElementsByClassName("my_slides");
+					        var dots = document.getElementsByClassName("dot");
+					        for (i=0; i<slides.length; i++){
+					          slides[i].style.display="none";
+					        }
+					        slideIndex++;     
+					        if (slideIndex > slides.length) {slideIndex = 1}        
+					        for (i=0; i<dots.length; i++){
+					        dots[i].className=dots[i].className.replace(" active", "");
+					        }
+					        slides[slideIndex-1].style.display = "block";
+					        dots[slideIndex-1].className +=" active";
+					        setTimeout(showSlides,3000);
+					      }
+					    </script>
+	            </div>
+	        </div>
+		</div><br><br>
+		<div class="row row-cols-1 row-cols-md-2">
+		  	<div class="col mb-6">
+			    <div class="card">
+			      <img src="e5.jpg" class="card-img-top" alt="lama">
+			      <div class="card-body">
+			        <h5 class="card-title">1 November 2019</h5>
+			        <p class="card-text">2019 Foundation day held on 1st of Nov. in the presence of His Eminence Lhalung Sungtrul Rinpoche.</p>
+			      </div>
+			    </div>
+  			</div>
+ 			<div class="col mb-6">
+			    <div class="card">
+			    	<div id="slides" class="carousel slide" data-ride="carousel">
+						<ul class="carousel-indicators">
+						    <li data-target="#slides" data-slide-to="0" class="active"></li>
+						    <li data-target="#slides" data-slide-to="1"></li>
+						</ul>
+						<div class="carousel-inner">
+						    <div class="carousel-item active">
+						        <img src="e4.jpg" class="card-img-top">
+						    </div>
+						    <div class="carousel-item">
+						        <img src="e3.jpg" class="card-img-top">
+						    </div>             
+						</div>
+					</div>
+			      <div class="card-body">
+			        <h5 class="card-title">11 November 2019</h5>
+			        <p class="card-text">On this auspicious and joyous occasion of the 64th Birth Anniversary of the Fourth Druk Gyalpo, Jigme Singye Wangchuck, Gyalpozhing College of Information Technology joins the nation in offering profound prayers for His long life and good health. <p/><p>Happy Birthday Your Majesty!</p>
+			      </div>
+			    </div>
+  			</div>
+  			<div class="col mb-6">
+			    <div class="card">
+			    	<div id="slides" class="carousel slide" data-ride="carousel">
+						<ul class="carousel-indicators">
+						    <li data-target="#slides" data-slide-to="0" class="active"></li>
+						    <li data-target="#slides" data-slide-to="1"></li>
+						</ul>
+						<div class="carousel-inner">
+						    <div class="carousel-item active">
+						        <img src="e1.jpg" class="card-img-top">
+						    </div>
+						    <div class="carousel-item">
+						        <img src="e2.jpg" class="card-img-top">
+						    </div>
+						                
+						</div>
+					</div>
+			 
+			      <div class="card-body">
+			        <h5 class="card-title">20 February 2020</h5>
+			        <p class="card-text">On this most joyous occasion of His Majesty's 40th Birthday, the family of Gyalpozhing College of Information Technology,Mongar would like to join the nation in offering our deepest respect, heartfelt felicitation and genuine gratitude to His Majesty The Druk Gyalpo. </p><p>May Your Majesty live a happy, healthy, and long life!</p>
+			      </div>
+			    </div>
+  			</div>
+		</div><br>
+		<div class="row row-cols-1 row-cols-md-2">
+			<div class="col mb-4">
+			    <div class="card">
+			      <img src="e8.jpg" class="card-img-top" alt="...">
+			      <div class="card-body">
+			        <h5 class="card-title">22 Febraury 2020</h5>
+			        <p class="card-text">On behalf of Gyalpoizhing Hospital family, would like to extend our great appreciation and big thanks to all the students of GCIT, (tarayana Club) Gyalpoizhing Mongar, for your contribution in mass cleaning and wet washing of our hospital on 22:02:2020.</p>
+			      </div>
+			    </div>
+	  		</div>
+	  		<div class="col mb-4">
+			    <div class="card">
+			      <img src="e.jpg" class="card-img-top" alt="...">
+			      <div class="card-body">
+			        <h5 class="card-title">27 Febraury 2020</h5>
+			        <p class="card-text">We are delivering a three-day media literacy training at Gyalpozhing College of Information Technology. GCIT is the newest college in the country. The training is part of a three-tier media literacy programme supported by EU/Helvetas. </p>
+			      </div>
+			    </div>
+	  		</div>
+		</div>
+	</div><br>
+<footer>
+<div class="container-fluid padding">
+    <div class="row text-center">
+    <div class="col-md-4">
+      <h3>Sister college</h3><br>
+      <p><a href="https://www.jnec.edu.bt/en/">JNEC</a></p>
+      <p><a href="http://www.cnr.edu.bt/">CNR</a></p>
+      <p><a href="https://www.cst.edu.bt/">CST</a></p>
+      <p><a href="https://www.sherubtse.edu.bt/">SHERUBTSE</a></p>
+      <p><a href="http://www.pce.edu.bt/">PCE</a></p>
+      <p><a href="https://www.rtc.bt/">RTC</a></p>
+    </div>
+    
+    <div class="col-md-4">
+      <h3>Navigation</h3><br>
+      <p><a href="index.html">Home</a>&emsp;<a href="family.html">Family</a></p>
+      <p><a href="Bio-data.html">Bio</a>&emsp;<a href="interest.html">Interest</a></p>
+      <p><a href="experience.html">Experience</a>&emsp;<a href="events.html">Events</a></p>
+      <p><a href="gallary.html">footprint</a>&emsp;<a href="bmi.html">BMI</a></p>
+      <p><a href="time_table.html">time table</a>&emsp;<a href="result.html">Result</a></p>
+      <p><a class="btn btn-primary" href="https://www.gcit.edu.bt/gcit/events/" role="button">Events</a></p>
+    </div>
+    <div class="col-md-4">
+      <h3>Contact</h3><br>
+        <div class="wrapper">
+          <div class="form">
+            <div class="top-form">
+              <div class="inner-form">
+                <div class="label">Name</div>
+                <input type="text" placeholder="sonam">
+              </div>
+            </div>
+            <div class="middle-form">
+              <div class="inner-form">
+                <div class="label">Email</div>
+                <input type="text" placeholder="sdema@gmail.com">
+              </div>
+            </div>
+            <div class="bottom-form">
+              <div class="inner-form">
+                <div class="label">Your message</div>
+                <textarea placeholder="your message"></textarea>
+              </div>
+            </div>
+
+            <div class="btn">Send form</div>
+          </div>
+        </div>
+    </div>
+    <div class="col-12">
+      <hr class="light">
+      <h5>&copy;2020Project | 12190081</h5>
+    </div>
+  </div>
+</div>  
+</footer>
+</body>
+</html>

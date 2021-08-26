@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X_UA_Compatible" content="ie=edge">
+  
+  <title>footprints</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+</head>
+<style type="text/css">
+  body{
+     "
+  }
+.gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; }
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+.gallery .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1); }
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+h2{
+  font-size: 50px;
+  word-break: break-all;
+}
+hr{color:3px blue;}
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+}
+.img-fluid{height:250px;
+width: 300px;}
+.image p{
+  position: absolute;
+  transform: translate(95px, -250px);
+  color:brown;
+  font-size:25px;
+}
+h2{color:#906fa8;
+text-shadow:5px 10px 10px #906fa8;
+text-align: center;
+top:5%;
+background-image:url(bg.jpeg);
+padding:18px;
+font-family:serif;
+}
+p{color:#273746;font-size:18px;
+    font-family:cursive;}
+@media screen and (max-width: 600px){
+  .image p{
+    text-align:left;
+    font:10px;
+    font-size:20px;
+  }
+}
+
+/*navbar*/
+.navbar{
+    padding:.6rem;
+
+}
+.navbar-nav li{
+    padding-right:20px;
+  
+}
+.nav-link{
+    font-size:1.2em !important;
+}
+/*contact*/
+.wrapper{
+  font-family: 'Kavivanar', cursive;
+  background-image:url(c.jpg);
+  opacity: 0.5;
+
+}
+.top-form,.middle-form,.bottom-form{
+  width:100%;
+  min-height:70px;
+  margin:10px 0;
+
+}
+.form input[type="text"]
+.form textarea{
+  padding: 15px 5px;
+  box-sizing: border-box;
+  width:100%;
+  border:2px solid #fff;
+  border-radius: 2px;
+  outline:none;
+  transition: all 0.2s ease;
+}
+.form input:focus,
+.form textarea:focus{
+  border-color: #48c9b0;
+  box-shadow:3px 3px 5px;
+}
+.form .label{
+  margin-bottom:5px;
+  text-transform: capitalize;
+  font-family: serif;
+}
+.btn{
+  background-color:#4ca1af;
+  width:150px;
+  padding:10px 0;
+  border-radius:30px;
+  text-align: center;
+  text-transform:uppercase;
+  color:#fff;
+  cursor: pointer;
+  z-index:1;
+}
+/*end contact*/
+/*footer*/
+footer{
+    background-color:#3f3f3f;
+    color:#d5d5d5;
+    padding-top:2rem;
+}
+hr.light{
+    border-top:1px solid #d5d5d5;
+    width:75%;
+    margin-top:.8rem;
+    margin-bottom:1rem;
+}
+h3{
+  font-family:serif;
+  color: #186a3b ;
+}
+.col-md-4 p a{
+  font-family:'Kavivanar',cursive;
+  color:#7d6608;
+  font-size:18px;
+}
+.d-block{
+  height:8vh;width:100%;
+  margin-left: 40px;
+}
+/*end footer*/
+
+</style>
+<body style="background:#ffffe3;">
+<nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img src="flag.jpeg" class="d-block "></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <div class="mr-auto"></div>
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About me
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="Bio-data.html">Bio Data</a>
+          <a class="dropdown-item" href="experience.html">Experience</a>
+          <a class="dropdown-item" href="interest.html">Interest</a>
+          <a class="dropdown-item" href="family.html">Family</a>
+        </div>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="gallary.html">Footprint</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          GCIT
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="events.html">Gcit events</a>
+            <a class="dropdown-item" href="time_table.html">Time table</a>
+            <a class="dropdown-item" href="result.html">Semester_Result</a>
+                <a class="dropdown-item" href="form.html">Result</a>
+        </div>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="bmi.html">Find_BMI</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Grid row -->
+<h2>MY FOOTPRINT</h2>
+<hr>
+<div class="row">
+
+  <!-- Grid column -->
+  <div class="col-md-12 d-flex justify-content-center mb-5">
+
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">home town</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">memorable place</button>
+
+  </div>
+  <!-- Grid column -->
+</div>
+<!-- Grid row -->
+
+<!-- Grid row -->
+<div class="gallery" id="gallery">
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="drakar.jpeg" alt="Drakarpo" style="width:100%">
+    <div class="image">
+        <p>Drakarpo</p>
+        <hr>
+    </div>
+    <p>Drakarpo is one of the sacred sites where sights of tourists are least seen in Paro unlike other monasteries and temple.</p><p>The sanctity of the place is pure and tranquil. After knowing the significance of Drakarpo, many Bhutanese people come for 108 circumambulations from the far-flung region of Bhutan.</p><p>After completion of high school mother and myself visited few monasteries at Paro and last we went to Darkarpo for 108 circumbulation.</p>
+    <a class="btn btn-primary" href="https://denkarsgetaway.com/drakarpo-the-popular-bhutanese-pilgrims-getaway/" role="button">learn more</a>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="pt.jpeg" alt="Paro taktsang" style="width:100%">
+    <p>Paro Taktsang is a temple perched high in the Himalaya mountains of Bhutan. It was originally just a network of caves used for meditation by Padma Sambhava, the man who brought Buddhism to Bhutan.</p><p> In 1692, Tenzin Rabgye, the ruler of Bhutan, oversaw the building of the temple on the meditation site.</p><p>I visit twice at Paro Tasktsang, place were amazing and feel peace and relax our mind.</p>
+    <a class="btn btn-primary" href="http://www.parotaktsang.org/" role="button">learn more</a>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="kyichu.jpeg" alt="paro kyichu-lhakhang" style="width:100%">
+    <div class="image">
+        <p>Kyichu Lhakhang</p>
+        <hr>
+      </div>
+    <p> Kyichu Lhakhang location is in the north of Paro town. It is one of the ancient, quiet and beautiful temples in Bhutan. It also goes by the names Lho Kyerchu or Kyerchu, and it is considered to be the sacred Jewel of Bhutan. </p><p>The temple was established by the Buddhist King Songstsen Gampo of Tibet to overcome the giant ogress that laid across Tibet and Himalayas preventing the spread of Buddhism</p>
+    <a class="btn btn-primary" href="https://www.drukasia.com/bhutan/paro/kyichu-lhakhang/" role="button">learn more</a>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="yongla.jpeg" alt="yongla geonpa" style="width:100%">
+    <div class="image">
+        <p>Yongla Geonpa</p>
+        <hr>
+      </div>
+    <p>One of the most well known monasteries under Pemagatshel Dzongkhag in eastern Bhutan is the Yongla Riwo Pelbar Dargeychhoeling Gonpa or the Pelri Gonpa, widely known today as Yongla Gonpa. </p><p>It is located on top of a mountain and as one travels over the national highway linking Samdrup Jongkhar to Trashigang, one can catch a glimpse of the temple at the junction known as Tshelingore where the road diverts and leads to Pemagatshel.</p><p>From this junction it is a half an hour drive to the monastery. Yongla Gonpa is believed to have been built by the second Yongla Lam Dorji Jamtsho in 1736. <p>That was exactly a year after the death of Khedrup Jigme Kuendel who identified, meditated and blessed this sacred place following the instructions based on the vision of his master Rigzin Jigme Lingpa 1729-1798, a great tertoen (treasure revealer) and Nyingma master.</p>
+    <a class="btn btn-primary" href="http://www.pemagatshel.gov.bt" role="button">learn more</a>
+  </div>
+  <!-- Grid column -->
+</div>
+<!-- Grid row -->
+<script>
+$(function() {
+var selectedClass = "";
+$(".filter").click(function(){
+selectedClass = $(this).attr("data-rel");
+$("#gallery").fadeTo(100, 0.1);
+$("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
+setTimeout(function() {
+$("."+selectedClass).fadeIn().addClass('animation');
+$("#gallery").fadeTo(300, 1);
+}, 300);
+});
+});
+</script>
+<footer>
+<div class="container-fluid padding">
+    <div class="row text-center">
+    <div class="col-md-4">
+      <h3>Sister college</h3><br>
+      <p><a href="https://www.jnec.edu.bt/en/">JNEC</a></p>
+      <p><a href="http://www.cnr.edu.bt/">CNR</a></p>
+      <p><a href="https://www.cst.edu.bt/">CST</a></p>
+      <p><a href="https://www.sherubtse.edu.bt/">SHERUBTSE</a></p>
+      <p><a href="http://www.pce.edu.bt/">PCE</a></p>
+      <p><a href="https://www.rtc.bt/">RTC</a></p>
+    </div>
+    
+    <div class="col-md-4">
+      <h3>Navigation</h3><br>
+      <p><a href="index.html">Home</a>&emsp;<a href="family.html">Family</a></p>
+      <p><a href="Bio-data.html">Bio</a>&emsp;<a href="interest.html">Interest</a></p>
+      <p><a href="experience.html">Experience</a>&emsp;<a href="events.html">Events</a></p>
+      <p><a href="gallary.html">footprint</a>&emsp;<a href="bmi.html">BMI</a></p>
+      <p><a href="time_table.html">time table</a>&emsp;<a href="result.html">Result</a></p>
+    </div>
+    <div class="col-md-4">
+      <h3>Contact</h3><br>
+        <div class="wrapper">
+          <div class="form">
+            <div class="top-form">
+              <div class="inner-form">
+                <div class="label">Name</div>
+                <input type="text" placeholder="sonam">
+              </div>
+            </div>
+            <div class="middle-form">
+              <div class="inner-form">
+                <div class="label">Email</div>
+                <input type="text" placeholder="sdema@gmail.com">
+              </div>
+            </div>
+            <div class="bottom-form">
+              <div class="inner-form">
+                <div class="label">Your message</div>
+                <textarea placeholder="your message"></textarea>
+              </div>
+            </div>
+
+            <div class="btn">Send form</div>
+          </div>
+        </div>
+    </div>
+    <div class="col-12">
+      <hr class="light">
+      <h5>&copy;2020Project | 12190081</h5>
+    </div>
+  </div>
+</div>  
+</footer>
+</body>
+</html>

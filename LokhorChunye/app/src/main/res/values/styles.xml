@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="birth">
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">serif</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+    <style name="topictex">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/alegreya</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline6</item>
+    </style>
+    <style name="topic">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline5</item>
+    </style>
+    <style name="search">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline6</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="fontFamily">serif</item>
+    </style>
+    <style name="tablelist">
+        <item name="android:fontFamily">serif</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline5</item>
+        <item name="android:textColor">@color/blue</item>
+
+    </style>
+    <style name="login">
+        <item name="android:fontFamily">serif</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

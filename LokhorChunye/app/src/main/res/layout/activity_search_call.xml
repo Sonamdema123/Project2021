@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".searchCall">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/t"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/topic"
+                android:background="@drawable/mewatopic"/>
+            <TextView
+                android:id="@+id/a"
+                android:gravity="center"
+                android:layout_below="@+id/t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="b"
+                style="@style/birth"/>
+            <LinearLayout
+                android:id="@+id/love"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/a"
+
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/love"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="LOVE"
+                    style="@style/topictex"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/b"
+                android:gravity="center"
+                android:layout_below="@+id/love"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/birth"/>
+
+            <LinearLayout
+                android:id="@+id/health"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/b"
+
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/health"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    style="@style/topictex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="HEALTH" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/c"
+                android:gravity="center"
+                android:layout_below="@+id/health"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/birth"/>
+
+            <LinearLayout
+                android:id="@+id/fortune"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/c"
+
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/wealth"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="WEALTH AND FORTUNE"
+                    style="@style/topictex"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fortune"
+                android:gravity="center"
+                style="@style/birth"/>
+
+            <LinearLayout
+                android:id="@+id/Live"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/d"
+
+                >
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/l"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="PAST LIVES AND NEXT LIFE"
+                    style="@style/topictex"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Live"
+                android:gravity="center"
+                style="@style/birth"
+                android:text="a"/>
+
+            <LinearLayout
+                android:id="@+id/occupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/e"
+
+                >
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/o1"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="OCCUPATION"
+                    style="@style/topictex"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/f"
+                android:gravity="center"
+                android:layout_below="@+id/occupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/birth"/>
+
+            <LinearLayout
+                android:id="@+id/mantra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/f"
+
+                >
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/m"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="MANTRA"
+                    style="@style/topictex"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/g"
+                android:gravity="center"
+                android:layout_below="@+id/mantra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/birth"/>
+            <LinearLayout
+                android:id="@+id/purification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/g"
+
+                >
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/mantra"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="METHOD OF PURIFICATION"
+                    style="@style/topictex"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/h"
+                android:gravity="center"
+                android:layout_below="@+id/purification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/birth"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

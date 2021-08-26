@@ -1,0 +1,165 @@
+/*nevigation*/
+.navbar{
+    padding:.6rem;
+
+}
+.navbar-nav li{
+    padding-right:20px;
+  
+}
+.nav-link{
+    font-size:1.2em !important;
+}
+/*image slide gallery*/
+
+*{
+	box-sizing: border-box;
+}
+/* center webpage*/
+h2{
+	font-family:serif;
+	text-align: center;
+	text-shadow:5px 10px 10px  #8e7612;
+}
+h2 span{
+	color:#b7832f;
+}
+p{
+	font-family:serif;
+	color:#873600;
+}
+h5{font-family:serif; color:#186a3b;}
+p a{color:#f8f9f9;}
+.main{
+	max-width: 1300px;
+	margin: auto;
+	background-color:#C0C0C0; 
+
+}
+
+.row{
+	margin: 10px -16px
+	padding-top:10%;
+	margin-left:6.5%;
+}
+
+/*add padding b/w each column*/
+.row,
+.row > .column{
+	padding: 8px;
+
+}
+
+/*create equal column*/
+.column{
+	float:left;
+	width:18%
+}
+
+/*content*/
+.content{
+	background-color: white;
+	padding:10px;
+	border-radius:6px;
+	box-shadow: 0px 2px 4px 0px pink;
+
+}
+.content img{height: 325px;}
+.content1 img{height:700px;}
+/*responsive layout-make a two column-layout instead of four columns */
+
+@media screen and (max-width: 1500px){
+	.column{
+		width:50%;
+	}
+}
+/*responsive layout-makes the two columns stack on top of each other instead of next to each other*/
+
+@media screen and (max-width: 600px){
+	.column{
+		width:100%;
+	}
+}
+
+/*slide*/
+.myslide{
+	position: relative;
+}
+
+.my_slides{
+	display: none;
+}
+#span1 span{
+	position: absolute;
+	color: maroon;
+	font-size:50px;
+
+}
+/*end slide */
+/*contact*/
+.wrapper{
+	font-family: 'Kavivanar', cursive;
+	background-image:url(c.jpg);
+	opacity: 0.5;
+
+}
+.top-form,.middle-form,.bottom-form{
+	width:100%;
+	min-height:70px;
+	margin:10px 0;
+
+}
+.form input[type="text"]
+.form textarea{
+	padding: 15px 5px;
+	box-sizing: border-box;
+	width:100%;
+	border:2px solid #fff;
+	border-radius: 2px;
+	outline:none;
+	transition: all 0.2s ease;
+}
+.form input:focus,
+.form textarea:focus{
+	border-color: #48c9b0;
+	box-shadow:3px 3px 5px;
+}
+.form .label{
+	margin-bottom:5px;
+	text-transform: capitalize;
+	font-family: serif;
+}
+.btn{
+	background-color:#4ca1af;
+	width:150px;
+	padding:10px 0;
+	border-radius:30px;
+	text-align: center;
+	text-transform:uppercase;
+	color:#fff;
+	cursor: pointer;
+	z-index:1;
+}
+/*end contact*/
+/*footer*/
+footer{
+    background-color:#3f3f3f;
+    color:#d5d5d5;
+    padding-top:2rem;
+}
+hr.light{
+    border-top:1px solid #d5d5d5;
+    width:75%;
+    margin-top:.8rem;
+    margin-bottom:1rem;
+}
+h3{
+	font-family:serif;
+	color: #186a3b ;
+}
+.col-md-4 p a{
+	font-family:'Kavivanar',cursive;
+	color:#7d6608;
+	font-size:18px;
+}
+a

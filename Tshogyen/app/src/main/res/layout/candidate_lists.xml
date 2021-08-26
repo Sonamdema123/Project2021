@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="20dp"
+    android:background="?android:selectableItemBackground"
+    android:elevation="4dp"
+    android:scrollbars="vertical"
+    app:cardCornerRadius="21dp"
+    app:cardUseCompatPadding="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_recyclerView_id"
+                android:layout_width="243dp"
+                android:layout_height="182dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profile_pic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.566"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/can_name"
+                style="@style/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_recyclerView_id" />
+
+            <TextView
+                android:id="@+id/t1"
+                style="@style/cardText"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="8dp"
+                android:text="Candidate Name"
+                app:layout_constraintStart_toEndOf="@+id/can_name"
+                app:layout_constraintTop_toTopOf="@+id/can_name" />
+
+
+            <TextView
+                android:id="@+id/t2"
+                style="@style/cardText"
+                android:layout_below="@+id/t1"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="Candidate Email"
+                app:layout_constraintStart_toEndOf="@+id/can_email"
+                app:layout_constraintTop_toTopOf="@+id/can_email" />
+
+            <TextView
+                android:id="@+id/can_email"
+                style="@style/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/can_name" />
+
+
+            <TextView
+                android:id="@+id/t3"
+                style="@style/cardText"
+                android:layout_below="@+id/t2"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="Candidate ID"
+                app:layout_constraintStart_toEndOf="@+id/can_id"
+                app:layout_constraintTop_toTopOf="@+id/can_id" />
+
+            <TextView
+                android:id="@+id/can_id"
+                style="@style/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/user_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/can_email" />
+
+            <TextView
+                android:id="@+id/t4"
+                style="@style/cardText"
+                android:layout_below="@+id/t3"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="Candidate Role"
+                app:layout_constraintStart_toEndOf="@+id/can_role"
+                app:layout_constraintTop_toTopOf="@+id/can_role" />
+
+            <TextView
+                android:id="@+id/can_role"
+                style="@style/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/role"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/can_id" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

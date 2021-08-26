@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/DarkGreen"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ArrowLeft"
+        android:outlineAmbientShadowColor="@color/blue"
+        android:src="@drawable/ic_arrow_left"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BirthSign"
+        android:textSize="25dp"
+        android:fontFamily="serif"
+        android:textColor="@color/brown" />
+
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context=".BirthMewa">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/linear"-->
+    <!--        android:layout_below="@+id/toolbar"-->
+
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+    <!--        <SearchView-->
+    <!--            android:id="@+id/search"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:background="@drawable/searchbg"-->
+    <!--            android:onClick="search"-->
+    <!--            android:layout_marginTop="10dp" />-->
+    <!--    </LinearLayout>-->
+<LinearLayout
+    android:layout_below="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="25dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="MewaArrowLeft"
+        android:outlineAmbientShadowColor="@color/blue"
+        android:src="@drawable/ic_arrow_left" />
+
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="-3dp"
+        android:background="@drawable/searchbg"
+        android:padding="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:onClick="call"
+        android:text="Search"
+        android:fontFamily="serif"
+        android:background="@drawable/custom_button"/>
+</LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/datalist"
+        android:layout_width="match_parent"
+        android:layout_height="539dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="4dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

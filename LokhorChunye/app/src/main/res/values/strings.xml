@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LokhorChunye</string>
+    <string name="title_activity_search">search</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="d">Developer: Sonam Dema</string>
+    <string name="c">Contact: sdema1684@gmail.com</string>`
+    <string name="about">According to Mewa or Magical Square System of Tibetan Astrology, we all have a unique blend of karma that determines our characteristics and traits based on act throughout our lives. It also predict what will happen to us in this life and our next rebirth based on the time of our birth. </string>
+</resources>

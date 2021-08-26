@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context=".search">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <TextView
+        android:id="@+id/searchTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/topic"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:text="Enter your Birth Year"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_below="@+id/searchTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/searchbg"
+            android:onClick="search"
+            android:layout_margin="16dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

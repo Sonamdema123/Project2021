@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1,2,3,4"
+    android:layout_margin="8dp"
+    tools:context=".BirthSign">
+    <include
+        android:id="@+id/usertoolbar"
+        layout="@layout/usertoolbar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GOOD AND BAD DAY BY BIRTH SIGN"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/mewatopic"
+        android:layout_below="@+id/toolbar"/>
+    <TableRow>
+
+        <TextView
+            android:text="Sign"
+            style="@style/tablelist"
+            />
+        <TextView
+            android:text="Laza"
+            style="@style/tablelist"/>
+        <TextView
+            android:text="Sogza"
+            style="@style/tablelist"
+           />
+        <TextView
+            android:text="Sheza"
+            style="@style/tablelist"/>
+    </TableRow>
+<!--    <ScrollView>-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_margin="5dp"
+            android:layout_column="1"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+<!--    </ScrollView>-->
+    
+</TableLayout>

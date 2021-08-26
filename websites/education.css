@@ -1,0 +1,141 @@
+/*navigation*/
+.navbar{
+    padding:.8rem;
+
+}
+.navbar-nav li{
+    padding-right:100px;
+  
+}
+.nav-link{
+    font-size:1.1em !important;
+}
+/*end of navigation*/
+
+/*image slider*/
+.carousel-inner img{
+    width:100%;
+    height:100%;
+}
+/*ending image slider*/
+
+/*layout*/
+.main{
+	max-width: 1600px;
+	height: auto;
+	margin-left:7%;
+	background-color:#bfbfbf;#808000
+}
+/* education*/
+.row{
+	justify-content: center;
+	display: flex;
+
+
+}
+.column{
+	float:left;
+	width:50%;
+	padding:1%;
+}
+.card{
+	box-shadow: 0 2px 4px 0;
+	border-radius:5px;
+	height: 900px;
+}
+@media screen and (max-width: 700px) {
+  .column{
+    width: 100%;
+    display: block;
+  }
+}
+
+/*image gellary*/
+
+.img_slide{
+	position: relative;
+}
+.slide img{
+	height: 600px;
+}
+
+.img_slide .button_left{
+	position: absolute;
+	z-index: 1;
+	transform: translate(0, -350px);
+	opacity: 0.5;
+}
+
+.img_slide .button_right{
+	position: absolute;
+	z-index: 1;
+	left:93.5%;
+	transform: translate(0, -350px);
+	opacity: 0.5;
+}
+
+.gcit p{
+	position: absolute;
+	z-index: 1;
+	transform: translate(100px, -500px);
+	color:brown;
+	font-size:30px;
+}
+/*end image gallery*/
+/* end education*/
+
+/*jorney of my education*/
+.row2{
+	display: flex;
+}
+.column2{
+	float: left;
+	width: 40%;
+	padding:20px;
+}
+.container{
+	float: center;
+
+}
+/*end of jorney of education*/
+h3{
+	font-size:35px;
+}
+p{
+	font-size:18px;
+}
+.card h3{text-align: center;
+color:orange;}
+/*button*/
+.button{
+	text-decoration: none;
+	display:inline-block;
+	padding:8px;
+	margin-left:30px;
+
+}
+/*button*/
+.container-padding{
+	border-radius: 10px;
+	background-color: #ffd1e8;
+}
+.carousel-item img{
+	border-radius:5px;
+}
+.container-fluid{
+	background-color: #ffd1e8;
+	border:2px solid red;
+}
+footer{
+    background-color:#3f3f3f;
+    color:#d5d5d5;
+    padding-top:2rem;
+}
+hr.light{
+    border-top:1px solid #d5d5d5;
+    width:75%;
+    margin-top:.8rem;
+    margin-bottom:1rem;
+}
+footer a{
+    color:#d5d5d5;
